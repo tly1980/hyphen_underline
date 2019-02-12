@@ -2,7 +2,7 @@ Hyphen Underline
 ================
 
 This is a *hyphen to underline* converter plugin for Sublime Text 3
-And it is fork from (underliner) [https://github.com/dfleury/underliner]
+And it is fork from [Diego Fleury's underliner](https://github.com/dfleury/underliner)
 
 Motivation
 ----------
