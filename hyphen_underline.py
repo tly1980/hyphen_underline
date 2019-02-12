@@ -26,15 +26,16 @@ class HyphenUnderlineCommand(sublime_plugin.TextCommand):
 
         replaced_char = self.names[replace_char]
         unreplaced_chard = self.names[self.replacements[replace_char]]
-        message = 'It was found more %s than %s, so it was replaced'
-        sublime.status_message(message % (replaced_char, unreplaced_chard))
+        message = 'It was found more {} than {}, so it was replaced'.format(
+            replaced_char, unreplaced_chard)
+        sublime.status_message(message)
 
     def get_prevailing_char(self, sels):
         '''decide which char will be replaced'''
         all_text = ''
         for sel in sels:
             all_text += self.view.substr(sel)
-        spaces_count = all_text.count(' ')
+        spaces_count = all_text.count('-')
         underlines_count = all_text.count('_')
         if spaces_count > underlines_count:
             return '-'
