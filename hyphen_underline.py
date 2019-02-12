@@ -2,15 +2,15 @@ import sublime
 import sublime_plugin
 
 
-class UnderlinerCommand(sublime_plugin.TextCommand):
+class HyphenUnderlineCommand(sublime_plugin.TextCommand):
 
     replacements = {
-        ' ': '_',
-        '_': ' ',
+        '-': '_',
+        '_': '-',
     }
 
     names = {
-        ' ': 'spaces',
+        '-': 'hyphen',
         '_': 'underlines',
     }
 
@@ -37,6 +37,6 @@ class UnderlinerCommand(sublime_plugin.TextCommand):
         spaces_count = all_text.count(' ')
         underlines_count = all_text.count('_')
         if spaces_count > underlines_count:
-            return ' '
+            return '-'
         else:
             return '_'

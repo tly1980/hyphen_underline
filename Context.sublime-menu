@@ -1,4 +1,4 @@
 [
-    {"id": "underliner"},
-    { "command": "underliner" }
+    {"id": "hyphen_underline"},
+    { "command": "hyphen_underline" }
 ]
