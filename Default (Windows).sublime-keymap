@@ -1,5 +1,5 @@
 [
     {
-        "keys": ["ctrl+shift+u"], "command": "hyphen_underline"
+        "keys": ["ctrl+shift+h"], "command": "hyphen_underline"
     }
 ]
