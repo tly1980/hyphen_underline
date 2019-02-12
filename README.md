@@ -1,7 +1,8 @@
-Underliner
-==========
+Hyphen Underline
+================
 
-This is a *space to underline* converter plugin for Sublime Text 3
+This is a *hyphen to underline* converter plugin for Sublime Text 3
+And it is fork from (underliner) [https://github.com/dfleury/underliner]
 
 Motivation
 ----------
@@ -15,20 +16,20 @@ Usage example
 -------------
 
 ```
-test if can sum two numbers
-more   than  one spaces
+a-bb--ccc---dddd
+a-bb-ccc_dddd
 ```
 
 After selecting a text like that above, there are many ways to activate the
 Underliner command such: context menu, main menu (`Edit > Convert Case >
-Underliner`), command list (`[Ctrl/Cmd]+Shift+P > Convert Case: Underliner`)
-and the keyboard shortcut (`[Ctrl/Cmd]+Shift+U`), which is my preferred option.
+Hyphen <> Underline`), command list (`[Ctrl/Cmd]+Shift+P > Convert Case: Hyphen <> Underline`)
+and the keyboard shortcut (`[Ctrl/Cmd]+Shift+H`), which is my preferred option.
 The expected effect is the same text with each space character replaced to a
 underline:
 
 ```
-test_if_can_sum_two_numbers
-more___than__one_spaces
+a_bb__ccc___dddd
+a_bb_ccc_dddd
 ```
 You can do the reverse too. Same principle: select and execute the command.
 Spaces and underlines are counted and the most found charactere will be used as
@@ -38,3 +39,4 @@ License
 -------
 
 The MIT License (MIT) - Copyright (c) 2014 Diego Fleury
+The MIT License (MIT) - Copyright (c) 2019 Tom Tang
